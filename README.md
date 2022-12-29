@@ -1,2 +1,2 @@
 # Adam-SolomonMusic-PlayerJavaFX
-Created in and run in the Apache netbeasn IDE
+Created in and run in the Apache Netbeans IDE
