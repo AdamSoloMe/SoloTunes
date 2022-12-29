@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="2127.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csc229labfiles.finalaudioplayer.PrimaryController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="MusicTitle" layoutX="643.0" layoutY="40.0" prefHeight="41.0" prefWidth="866.0" text="Current Song" textAlignment="CENTER">
+               <font>
+                  <Font name="Baghdad Regular" size="23.0" />
+               </font>
+            </Label>
+            <MenuBar layoutX="3.0" layoutY="1.0" prefHeight="27.0" prefWidth="2119.0">
+              <menus>
+                <Menu mnemonicParsing="false" onAction="#closeApp" text="Close">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#showHelpInfo" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label layoutX="14.0" layoutY="34.0" prefHeight="41.0" prefWidth="600.0" text="*Please select the help/about section from the Menu Above to  Learn how this application works">
+               <font>
+                  <Font name="Baghdad Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="albumArt" fitHeight="309.0" fitWidth="1753.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Slider fx:id="MusicProgressBar" layoutX="114.0" layoutY="3.0" max="300.0" prefHeight="38.0" prefWidth="1779.0" showTickLabels="true" showTickMarks="true" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="ArtistLabel" prefHeight="41.0" prefWidth="870.0" text="Current Artist" textAlignment="CENTER">
+         <font>
+            <Font name="Baghdad Regular" size="23.0" />
+         </font>
+      </Label>
+      <MediaView fx:id="player" fitHeight="2.0" fitWidth="287.0" opacity="0.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ListView fx:id="PlayList" layoutX="875.0" layoutY="4.0" onMouseClicked="#handleMouseClick" prefHeight="181.0" prefWidth="1068.0" />
+            <Button layoutX="604.0" layoutY="76.0" mnemonicParsing="false" onAction="#UpdateListview" prefHeight="55.0" prefWidth="240.0" text="Press to List current songs">
+               <font>
+                  <Font name="Baghdad Regular" size="13.0" />
+               </font></Button>
+            <ListView fx:id="SongInfo" layoutX="14.0" layoutY="1.0" prefHeight="188.0" prefWidth="571.0" />
+         </children>
+      </AnchorPane>
+      <ToolBar fx:id="toolContainer" pickOnBounds="false" prefHeight="41.0" prefWidth="1170.0">
+        <items>
+          <Button fx:id="prevButton" cancelButton="true" disable="true" mnemonicParsing="false" onAction="#prevClicked" prefHeight="31.0" prefWidth="223.0" text="Previous" textAlignment="CENTER">
+               <font>
+                  <Font name="Baghdad Regular" size="13.0" />
+               </font></Button>
+            <ToggleButton fx:id="playPause" mnemonicParsing="false" onAction="#playPauseClicked" prefHeight="30.0" prefWidth="127.0" snapToPixel="false" text="play/Pause">
+               <font>
+                  <Font name="Baghdad Regular" size="13.0" />
+               </font></ToggleButton>
+            <Button fx:id="nextButton" disable="true" mnemonicParsing="false" onAction="#nextClicked" prefHeight="31.0" prefWidth="224.0" text="NextSong" textAlignment="CENTER">
+               <font>
+                  <Font name="Baghdad Regular" size="13.0" />
+               </font></Button>
+            <Slider fx:id="volume" blockIncrement="0.0" max="200.0" prefHeight="16.0" prefWidth="523.0" value="50.0">          
+            </Slider>
+            <Button fx:id="browse" mnemonicParsing="false" onAction="#browseClicked" prefHeight="31.0" prefWidth="268.0" text="Load Your Song Here">
+               <font>
+                  <Font name="Baghdad Regular" size="13.0" />
+               </font></Button>
+            <Button fx:id="AddSongButton" mnemonicParsing="false" onAction="#goToAddSongWindow" prefHeight="25.0" prefWidth="449.0" text="Add Song" />
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+   </children>
+</VBox>
