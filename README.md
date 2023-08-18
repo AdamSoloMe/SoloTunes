@@ -2,7 +2,7 @@ Sure, here's a README file for your "SolTune" project:
 
 # SoloTune - Multi-threaded Music Player Application
 
-SolTune is a Java desktop application developed using the JavaFX library that allows users to enjoy their favorite music with an intuitive and interactive interface. This project focuses on providing a seamless music playback experience while incorporating essential features to enhance user convenience.
+SoloTune is a Java desktop application developed using the JavaFX library that allows users to enjoy their favorite music with an intuitive and interactive interface. This project focuses on providing a seamless music playback experience while incorporating essential features to enhance user convenience.
 
 ## Features
 
@@ -15,7 +15,7 @@ SolTune is a Java desktop application developed using the JavaFX library that al
 
 ## Getting Started
 
-To run the SolTune application on your local machine, follow these steps:
+To run the SoloTune application on your local machine, follow these steps:
 
 1. **Prerequisites:** Make sure you have Java and JavaFX and Apache Netbeans IDE installed on your system.
 
@@ -37,7 +37,7 @@ To run the SolTune application on your local machine, follow these steps:
 
 ## Contributing
 
-Contributions are welcome and encouraged! To contribute to SolTune, follow these steps:
+Contributions are welcome and encouraged! To contribute to SoloTune, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
