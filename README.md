@@ -17,7 +17,7 @@ SolTune is a Java desktop application developed using the JavaFX library that al
 
 To run the SolTune application on your local machine, follow these steps:
 
-1. **Prerequisites:** Make sure you have Java and JavaFX installed on your system.
+1. **Prerequisites:** Make sure you have Java and JavaFX and Apache Netbeans IDE installed on your system.
 
 2. **Clone the Repository:** Clone this repository to your local machine using the following command:
 
@@ -25,13 +25,7 @@ To run the SolTune application on your local machine, follow these steps:
    git clone https://github.com/AdamSoloMe/SoloTunes.git
    ```
 
-3. **Compile and Run:** Navigate to the project directory and compile the code using your preferred Java compiler. Run the application by executing the main class:
-
-   ```bash
-   cd solotune
-   javac Main.java
-   java Main
-   ```
+3. **Compile and Run:** Navigate to the project directory and open the Application within the Netbeans IDE and run 
 
 ## Usage
 
