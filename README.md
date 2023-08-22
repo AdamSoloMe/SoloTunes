@@ -55,4 +55,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to reach out to me for any questions or feedback. Enjoy your music with SoloTune!
+Feel free to reach out to me for any questions or feedback. Enjoy your music with SoloTunes!
